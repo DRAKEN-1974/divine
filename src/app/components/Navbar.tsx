@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="navbar-content">
           <div className="logo">
             <Link href="/">
-              <img src="/temple-logo.png" alt="Temple Logo" />
+              <img src="/image/logo.jpeg" alt="Temple Logo" />
               <span>Divine Temple</span>
             </Link>
           </div>

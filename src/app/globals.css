@@ -112,3 +112,222 @@ body {
     flex-direction: column;
   }
 }
+
+
+
+
+
+
+
+
+
+/* Project Section Styles */
+.projects {
+  padding: 5rem 0;
+  background-color: #fdf6f1;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #d2682f;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-content h3 {
+  color: #d2682f;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-content p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-progress {
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress {
+  height: 100%;
+  background-color: #d2682f;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.project-progress span {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.project-link {
+  display: inline-block;
+  color: #d2682f;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-image {
+    height: 200px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Spiritual Content Section */
+.spiritual-content {
+  padding: 5rem 0;
+  background-color: #fff;
+}
+
+.spiritual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.spiritual-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.spiritual-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.spiritual-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.spiritual-content {
+  padding: 1.5rem;
+}
+
+.content-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #fdf6f1;
+  color: #d2682f;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.spiritual-content h3 {
+  color: #333;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.spiritual-content p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.content-link {
+  display: inline-flex;
+  align-items: center;
+  color: #d2682f;
+  text-decoration: none;
+  font-weight: 500;
+  gap: 0.5rem;
+  transition: gap 0.3s ease;
+}
+
+.content-link:hover {
+  gap: 0.75rem;
+}
+
+.content-link span {
+  transition: transform 0.3s ease;
+}
+
+.content-link:hover span {
+  transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+  .spiritual-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .spiritual-image {
+    height: 180px;
+  }
+}
